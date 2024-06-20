@@ -1,0 +1,34 @@
+[
+    {
+        "nomeProduto": "Celeste Sports Bra",
+        "tamanho": "M" ,
+        "cor": "Green",
+        "quantidade": 4
+    },
+    {
+        "nomeProduto": "Aero Daily Fitness Tee",
+        "tamanho": "L" ,
+        "cor": "Yellow",
+        "quantidade": 7
+    },
+    {
+        "nomeProduto": "Aether Gym Pant",
+        "tamanho": "34" ,
+        "cor": "Blue",
+        "quantidade": 1
+    },
+    {
+        "nomeProduto": "Apollo Running Short",
+        "tamanho": "32" ,
+        "cor": "Black",
+        "quantidade": 2
+    },
+    {
+        "nomeProduto": "Ariel Roll Sleeve Sweatshirt",
+        "tamanho": "Xl" ,
+        "cor": "Purple",
+        "quantidade": 3
+    }
+
+    
+]

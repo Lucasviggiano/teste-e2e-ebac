@@ -38,16 +38,14 @@ context('Funcionalidade Login', () => {
         cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, aluno_ebac')
     })
 
-
     it('Deve fazer login - utilizando massa de dados', () => {
         cy.get('#username').type(perfil.usuario)
         cy.get('#password').type(perfil.senha)
         cy.get('.woocommerce-form > .button').click()
         cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('exist')
-
     });
-    it('Deve exibir uma mensagem de erro ao inserir usuário invalido', () => {
 
+    it('Deve exibir uma mensagem de erro ao inserir usuário invalido', () => {
         cy.get('#username').type('lucas.tete@teste.com')
         cy.get('#password').type('teste123', { log: false })
         cy.get('.woocommerce-form > .button').click()
@@ -55,7 +53,6 @@ context('Funcionalidade Login', () => {
     });
 
     it('Deve exibir uma mensagem de erro ao inserir senha inválida', () => {
-
         cy.get('#username').type('lucas.teste@teste.com')
         cy.get('#password').type('teste1234', { log: false })
         cy.get('.woocommerce-form > .button').click()

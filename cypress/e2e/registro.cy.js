@@ -16,7 +16,7 @@ describe('Funcionalidade: Cadastro', () => {
         cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('exist')
 
     });
-    it('deve realizar o cadastro com sucesso - usando variáveis', () => {
+    it('Deve realizar o cadastro com sucesso - usando variáveis', () => {
         var email = faker.internet.email()
         var nome = faker.person.firstName()
         var sobrenome = faker.person.lastName()
@@ -33,11 +33,10 @@ describe('Funcionalidade: Cadastro', () => {
 
     });
     
-    it.only('Deve realizar o cadastro com sucesso - usando comando customizado', () => {
+    it('Deve realizar o cadastro com sucesso - usando comando customizado', () => {
         cy.preCadastro(faker.internet.email(), '1234567890', faker.person.firstName(), faker.person.lastName())
         cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso.')
 
-    
     
     });
 
