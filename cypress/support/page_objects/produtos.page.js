@@ -11,12 +11,22 @@ class ProdutosPage {
         cy.get('[name="s"]').eq(1).type(nomeProduto)
         cy.get('.button-search').eq(1).click()
 
+
     }
 
 
-    buscarProdutoLista(nomeProduto) {
-        cy.get('.products > .row')
-            .contains(nomeProduto)
+    buscarProdutoLista() {
+        cy.visit('produtos')
+        cy.get('.product-block > .block-inner >')
+            .eq(3)
+            .click()
+
+    }
+
+    buscarTerceiroProdutoLista() {
+        cy.visit('produtos')
+        cy.get('.product-block > .block-inner >')
+            .eq(2)
             .click()
     }
 
@@ -33,6 +43,12 @@ class ProdutosPage {
 
     }
 
+   
+    
+
 }
 
+
+
 export default new ProdutosPage()
+
