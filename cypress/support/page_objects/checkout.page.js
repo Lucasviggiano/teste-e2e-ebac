@@ -8,7 +8,7 @@ class CheckoutPage {
     }
 
 
-realizarcheckout(){
+realizarcheckout() {
 cy.checkout(faker.person.firstName(), faker.person.lastName(), 'Rua teste 123', 'São Paulo', '36420000', '1199999999', faker.internet.email())
         cy.get('#terms').click()
         cy.get('#createaccount').click()

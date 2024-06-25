@@ -20,6 +20,7 @@ class ProdutosPage {
         cy.get('.product-block > .block-inner >')
             .eq(3)
             .click()
+        
 
     }
 
