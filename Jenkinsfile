@@ -11,7 +11,7 @@ pipeline {
          stage('test') {
             steps {
                 bat '''set NO_COLOR=1
-npm teste'''
+npm test'''
         
             }
         }
